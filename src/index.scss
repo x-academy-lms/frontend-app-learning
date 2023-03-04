@@ -5,6 +5,10 @@
 
 @import "~@edx/frontend-component-footer/dist/footer";
 
+// DJEZZY VARIABLES :
+$dejzzy-primary : #D23228;
+
+//
 #root {
   display: flex;
   flex-direction: column;
@@ -72,7 +76,9 @@
     &.active {
       font-weight: $font-weight-normal;
       color: $primary-500;
-      border-bottom-color: $primary-500;
+      // border-bottom-color: $primary-500;
+      // color: $dejzzy-primary;
+      border-bottom-color: $dejzzy-primary;
     }
   }
 }
@@ -361,6 +367,7 @@
   box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, .2) !important;
 }
 
+
 // Import component-specific sass files
 @import "courseware/course/celebration/CelebrationModal.scss";
 @import "courseware/course/sidebar/sidebars/notifications/NotificationIcon.scss";
@@ -377,3 +384,10 @@
 @import "course-home/progress-tab/grades/course-grade/GradeBar.scss";
 @import "courseware/course/course-exit/CourseRecommendations";
 @import "product-tours/newUserCourseHomeTour/NewUserCourseHomeTourModal.scss";
+
+
+// CUSTOMAZATION 
+.btn-brand{
+  background-color: #D23228;
+  border-color: #D23228;
+}
